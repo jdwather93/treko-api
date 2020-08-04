@@ -10,10 +10,9 @@ pipeline {
         sh "npm install"
       }
     }
-   stage("Test") {
-     steps {
-      sh "nmp run test:ci"
-     }
+    stage("Test") {
+      steps {
+        sh "nmp run test:ci"
       }
     }
   }

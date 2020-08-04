@@ -5,12 +5,13 @@ pipeline {
     }
   }
   stages {
-    stage("Build"){
+    stage("Build") {
       steps {
         sh "npm install"
       }
+    }
    stage("Test") {
-     steps{
+     steps {
       sh "nmp run test:ci"
      }
       }

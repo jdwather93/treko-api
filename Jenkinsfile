@@ -2,6 +2,7 @@ pipeline {
   agent {
     docker {
     image "node:10-alpine"
+     args "--network=skynet"
     }
   }
   stages {

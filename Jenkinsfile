@@ -9,6 +9,7 @@ pipeline {
      stage ("Build") {
        steps {
          sh "chmod +x ./scripts/alpine.sh && ./scripts/alpine.sh"
+         input message: "PAUSE TEMPORARIO"
          sh "chmod +x ./scripts/dropdb.sh"
          sh "npm install"
        }
